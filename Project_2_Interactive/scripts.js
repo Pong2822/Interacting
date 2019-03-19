@@ -1,5 +1,3 @@
-// zoom in and out of clown
-
 var trigger = document.querySelector(".trigger")
 var body = document.querySelector("body")
 var audio = document.querySelector('audio')
