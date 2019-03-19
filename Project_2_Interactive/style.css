@@ -1,0 +1,63 @@
+* {
+	box-sizing: content-box;
+}
+body {
+	color: #DCC812;
+	background-color: #F6F6F6; 
+	font-family: monospace, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 36px;
+	height: 100vh;
+}
+img {
+	max-width: 100%;
+	height: auto;
+
+}
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.flower {
+	width: 20em;
+	height: 20em;
+    background-image: url(images/flower.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: scale(0);
+	transition: transform .5s; 
+}
+
+#zoom .flower {
+	transform: scale(1);
+}
+
+
+
+.trigger {
+	position: fixed;
+	bottom: 18em;
+	right: 2em;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+	padding: 0;
+	background-color: white;
+	color: orange;
+	line-height: 1.4;
+	border-radius: 30%;
+    font-size: 1.25em;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.25s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0);
+}
+
+#zoom .trigger {
+	transform: rotate(360deg);
+}
